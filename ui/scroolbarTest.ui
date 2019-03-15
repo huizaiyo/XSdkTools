@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QudaoWidget</class>
+ <widget class="QWidget" name="QudaoWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>521</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="icon">
+     <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+      <normaloff>:/images/RefreshData.png</normaloff>:/images/RefreshData.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>基本设置</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="icon">
+     <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+      <normaloff>:/images/RefreshData.png</normaloff>:/images/RefreshData.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>安全设置</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="icon">
+     <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+      <normaloff>:/images/RefreshData.png</normaloff>:/images/RefreshData.png</iconset>
+    </attribute>
+    <attribute name="title">
+     <string>权限设置</string>
+    </attribute>
+   </widget>
+  </widget>
+  <widget class="QListWidget" name="contentsWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>44</y>
+     <width>141</width>
+     <height>357</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>44</y>
+     <width>381</width>
+     <height>357</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>379</width>
+      <height>355</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../WorkSpace_python/mypack/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

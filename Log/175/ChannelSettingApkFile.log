@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<channel_37 appName="测试" checkBoxflag="True" minsdkVersion="15" targetsdkVersion="21" versionCode="123" versionName="1.0"/>
+	<channel_37_175.8618293 appName="测试" checkBoxflag="False" minsdkVersion="14" packageName="com.funcell" targetsdkVersion="23" versionCode="30" versionName="2.0"/>
+	<channel_51508_175.10158 appName="" checkBoxflag="False" minsdkVersion="" packageName="" targetsdkVersion="" versionCode="" versionName=""/>
+	<channel_maingames_175.10382 appName="" checkBoxflag="False" minsdkVersion="" packageName="" targetsdkVersion="" versionCode="" versionName=""/>
+</root>

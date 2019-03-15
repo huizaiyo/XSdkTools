@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<channel_37 checkBoxflag="True" icon="" landscapeFlag="True" splash="I:/闪屏demo/fun_plugin_splash.png" splash_fromAlpha="0.0" splash_time="10000"/>
+	<channel_37_175.8618293 checkBoxflag="False" icon="I:/闪屏demo/icon.png" landscapeFlag="True" splash="I:/闪屏demo/fun_plugin_splash.png" splash_fromAlpha="0.5" splash_time="3000"/>
+	<channel_huawei_175.10171 checkBoxflag="False" icon="" landscapeFlag="True" splash="" splash_fromAlpha="" splash_time=""/>
+	<channel_37_175.10007 checkBoxflag="True" icon="I:/project/icon.png" landscapeFlag="True" splash="" splash_fromAlpha="" splash_time=""/>
+</root>

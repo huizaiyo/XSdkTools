@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1070</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+    <normaloff>:/images/360logo.ico</normaloff>:/images/360logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+font-family:'微软雅黑';
+color:white;
+}
+
+QWidget:focus{outline: none;}
+
+/*设置背景图片*/
+QMainWindow{
+border-image:url(&quot;:/images/funcell_bg.png&quot;);
+}
+QToolButton[objectName=&quot;closetoolButton&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;closetoolButton&quot;]:hover {
+image:url(:/images/open_over.png);
+}
+QToolButton[objectName=&quot;closetoolButton&quot;]:pressed {
+image:url(:/images/open_over.png);
+}
+
+QToolButton[objectName=&quot;toolButton_2&quot;],QToolButton[objectName=&quot;toolButton_13&quot;]  {
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_2&quot;]:hover,QToolButton[objectName=&quot;toolButton_13&quot;]:hover {
+image:url(:/images/open_over_02.png);
+}
+QToolButton[objectName=&quot;toolButton_2&quot;]:pressed,QToolButton[objectName=&quot;toolButton_13&quot;]:pressed {
+image:url(:/images/open_over_02.png);
+}
+
+QPushButton[objectName=&quot;toolButton&quot;],QPushButton[objectName=&quot;toolButton_3&quot;],QPushButton[objectName=&quot;toolButton_4&quot;]{
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_5&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_6&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_7&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_8&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_9&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_10&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;toolButton_11&quot;],QToolButton[objectName=&quot;toolButton_12&quot;] {
+border:0px;
+}
+QListWidget[objectName=&quot;listWidget&quot;]{
+	background-color:transparent;
+border:0px;
+}
+QListWidget[objectName=&quot;listWidget_2&quot;],QListWidget[objectName=&quot;listWidget_3&quot;]{
+	background-color:transparent;
+border:0px;
+}
+QLineEdit[objectName=&quot;lineEdit&quot;],QLineEdit[objectName=&quot;lineEdit_2&quot;],QLineEdit[objectName=&quot;lineEdit_3&quot;],QLineEdit[objectName=&quot;lineEdit_4&quot;],QLineEdit[objectName=&quot;lineEdit_5&quot;]{
+	color:black;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>152</y>
+      <width>806</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>母包路径</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(180, 180, 180)</string>
+      </property>
+      <property name="text">
+       <string>选择</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>80</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>输出路径</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>70</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>70</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(180, 180, 180)</string>
+      </property>
+      <property name="text">
+       <string>选择</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>签名文件</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>110</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>110</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(180, 180, 180)</string>
+      </property>
+      <property name="text">
+       <string>配置</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_5">
+      <property name="geometry">
+       <rect>
+        <x>696</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/sm_img_08.png</normaloff>:/images/sm_img_08.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>155</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>appVersion</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>150</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>148</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(180, 180, 180)</string>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>197</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>resVersion</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>192</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>190</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(180, 180, 180)</string>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QToolButton" name="toolButton_6">
+      <property name="geometry">
+       <rect>
+        <x>696</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/sm_img_08.png</normaloff>:/images/sm_img_08.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>801</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_7">
+      <property name="geometry">
+       <rect>
+        <x>469</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>全选</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/quanxuan_14.png</normaloff>:/images/quanxuan_14.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_8">
+      <property name="geometry">
+       <rect>
+        <x>358</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>反选</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/fanxuan_14.png</normaloff>:/images/fanxuan_14.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>0</y>
+        <width>20</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>已选渠道：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xx</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>20</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>未选渠道：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xx</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>48</y>
+        <width>239</width>
+        <height>349</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_10">
+      <property name="geometry">
+       <rect>
+        <x>582</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/sm_img_07.png</normaloff>:/images/sm_img_07.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>48</y>
+        <width>567</width>
+        <height>349</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>806</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>16</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>0</y>
+        <width>16</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>0</y>
+        <width>16</width>
+        <height>49</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>15</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>出包：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>17</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xx</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>15</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>成功：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>17</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xx</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>15</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>失败：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>17</y>
+        <width>54</width>
+        <height>12</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Xx</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>48</y>
+        <width>806</width>
+        <height>351</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_9">
+      <property name="geometry">
+       <rect>
+        <x>696</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>打包</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/dabao_14.png</normaloff>:/images/dabao_14.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_11">
+      <property name="geometry">
+       <rect>
+        <x>583</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/sm_img_07.png</normaloff>:/images/sm_img_07.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_12">
+      <property name="geometry">
+       <rect>
+        <x>471</x>
+        <y>398</y>
+        <width>114</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+        <normaloff>:/images/chakanrizhi_14.png</normaloff>:/images/chakanrizhi_14.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>114</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="toolButton_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>0</y>
+      <width>55</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+      <normaloff>:/images/min_normal.png</normaloff>:/images/min_normal.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>52</width>
+      <height>62</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="closetoolButton">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>0</y>
+      <width>55</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+      <normaloff>:/images/close_normal.png</normaloff>:/images/close_normal.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>52</width>
+      <height>62</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>62</y>
+      <width>271</width>
+      <height>87</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-image:url(:/images/sm_img_03.png);border:0px;}
+QPushButton:hover{background-image:url(:/images/tar_03.png);border:0px}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>271</width>
+      <height>87</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>550</y>
+      <width>263</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../WorkSpace_python/mypack/res.qrc">:/images/version.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>262</width>
+      <height>63</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../WorkSpace_python/mypack/res.qrc">:/images/funcellimg_01.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>0</y>
+      <width>137</width>
+      <height>63</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../../WorkSpace_python/mypack/res.qrc">:/images/funcellimg_02.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>60</y>
+      <width>8</width>
+      <height>492</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>545</y>
+      <width>811</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toolButton_3">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>61</y>
+      <width>271</width>
+      <height>87</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-image:url(:/images/btn_07.png);border:0px;}
+QPushButton:hover{background-image:url(:/images/tar_qudao_03.png);border:0px}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>271</width>
+      <height>87</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toolButton_4">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>61</y>
+      <width>271</width>
+      <height>87</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-image:url(:/images/btn_08.png);border:0px;}
+QPushButton:hover{background-image:url(:/images/tar_chubao_05.png);border:0px}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>271</width>
+      <height>87</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_13">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>0</y>
+      <width>50</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设置</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>52</width>
+      <height>62</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../WorkSpace_python/mypack/res.qrc"/>
+  <include location="../../WorkSpace_python/mypack/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

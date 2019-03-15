@@ -1,0 +1,8 @@
+<root>
+	<apk appVersion="1.0.0" outDir="I:\WorkSpace\WorkSpace_python\mypack\outapk" path="C:/Users/hexin/Desktop/FuncellGameTest.apk" resVersion="1.0.0" />
+	<keystore alias="ares.keystore" aliaspassword="123456" password="123456" path="E:/project/ares.keystore" />
+	<channel name="funcell," />
+	<host address="https://auth.funcell123.com/product/pack" />
+	<update address="http://553-cdn.haowan123.com/federation/tool/update.xml" />
+	<custom_file checkBoxflag="False" path="C:/Users/hexin/Desktop/test/te.xml" />
+</root>

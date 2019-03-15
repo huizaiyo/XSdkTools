@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<local_info>
+<serverListURL>http://serverlist.funcell123.com/serverlist</serverListURL>
+<VersionInfoURL>http://fantasychronicles.download.553.com/android/xiaomi/RemoteVersion.xml</VersionInfoURL>
+<local_patch_res_version>1.1.1</local_patch_res_version>
+<local_app_version>1.1.1</local_app_version>
+<platform_fid>xiaomi</platform_fid>
+<local_base_res_version>99</local_base_res_version>
+<fgi>18072</fgi>
+<developer>false</developer>
+<hasCopy>false</hasCopy>
+<enableDownload>false</enableDownload>
+</local_info>

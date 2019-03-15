@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>42</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolButton[objectName=&quot;closetoolButton&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;closetoolButton&quot;]:hover {
+image:url(:/images/close_hover.png);
+}
+QToolButton[objectName=&quot;closetoolButton&quot;]:pressed {
+image:url(:/images/close_pressed.png);
+}
+
+QWidget[objectName=&quot;widget&quot;]{
+background-image: url(:/images/funcell_bg.png);
+}
+QPushButton[objectName=&quot;pushButton&quot;]{
+background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+}
+QPushButton[objectName=&quot;pushButton_2&quot;]{
+background-color: rgb(0, 165, 0);
+color: rgb(255, 255, 255);
+}
+QCheckBox[objectName=&quot;checkBox&quot;]{
+color: rgb(255, 0, 0);
+}
+QWidget[objectName=&quot;Form&quot;]{
+background-color: rgb(255, 255, 255);
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>15</y>
+     <width>110</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>时间</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>15</y>
+     <width>110</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>版本</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>15</y>
+     <width>138</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>描述</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../WorkSpace_python/mypack/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

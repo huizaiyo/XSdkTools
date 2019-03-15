@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>406</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolButton[objectName=&quot;closetoolButton&quot;] {
+border:0px;
+}
+QToolButton[objectName=&quot;closetoolButton&quot;]:hover {
+image:url(:/images/close_hover.png);
+}
+QToolButton[objectName=&quot;closetoolButton&quot;]:pressed {
+image:url(:/images/close_pressed.png);
+}
+QWidget[objectName=&quot;Form&quot;]{
+background-image: url(:/images/funcell_bg.png);
+}
+QListWidget[objectName=&quot;listWidget&quot;]{
+background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QToolButton" name="closetoolButton">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>0</y>
+     <width>27</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../WorkSpace_python/mypack/res.qrc">
+     <normaloff>:/images/close_normal.png</normaloff>:/images/close_normal.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>27</width>
+     <height>22</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>498</width>
+     <height>335</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#ffffff;&quot;&gt;配置签名文件&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>28</y>
+     <width>50</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../WorkSpace_python/mypack/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

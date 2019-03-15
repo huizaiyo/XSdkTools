@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <version>2.1.47</version>
+    <force>true</force>
+    <url>http://sdk.funcell123.com/upload/tool/FuncellSDKTool.exe</url>
+    <md5>019d05710aaaf36586d54e0ed61904c1</md5>
+    <date>2016-09-27</date>
+    <descript>
+        1、新增了批量出包功能
+        2、界面优化
+    </descript>
+    <auth>http://auth.funcell123.com/product/pack</auth>
+</root>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="funcell_splash_time">2000</string>
+    <string name="funcell_splash_fromAlpha">0.0</string>
+</resources>
