@@ -1,7 +1,9 @@
  XSdkTools
 ===============
 *   QQ交流群： 722652515 
+*   从零学Python，各种开发案例，不定期更新:https://gitee.com/52itstyle/Python
 *   码云地址：
+*   后端脚手架：https://github.com/huangjian888/jeeweb-mybatis-springboot
 
 -----------------------------------
 一款类似Anysdk、Quicksdk、棱镜sdk的打包工具（多线程）
@@ -20,6 +22,7 @@
 * ui目录为pyqt界面，后缀为ui，需要将ui转换为py文件，具体查看ui目录下的*.bat 文件中的命令
 * pyrcc4 -o x.py x.qrc 将qrc文件输出为py文件，qrc文件为pyqt ui工具使用的文件，布局
 * pyrcc4 -o x.py x.ui 将ui文件输出为py文件
+* 该框架为PC客户端，后台服务器可以自行实现
 
 
 框架流程
