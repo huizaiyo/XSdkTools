@@ -2,7 +2,7 @@
 ===============
 *   QQ交流群： 722652515 
 *   从零学Python，各种开发案例，不定期更新:https://gitee.com/52itstyle/Python
-*   码云地址：
+*   码云地址：https://gitee.com/huang465265897/XSdkTools
 *   后端脚手架：https://github.com/huangjian888/jeeweb-mybatis-springboot
 
 -----------------------------------
